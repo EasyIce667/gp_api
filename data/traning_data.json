@@ -1,0 +1,104 @@
+{
+  "trials": [
+    {
+      "trial_id": 1,
+      "parameters": {
+        "epdm_content": 19.7,
+        "talc_content": 7.2,
+        "processing_temp": 111.5,
+        "screw_speed_rpm": 282.21
+      },
+      "result": {"impact_strength": 34.2}
+    },
+    {
+      "trial_id": 2,
+      "parameters": {
+        "epdm_content": 15.2,
+        "talc_content": 11.3,
+        "processing_temp": 127.3,
+        "screw_speed_rpm": 203.56
+      },
+      "result": {"impact_strength": 30.9}
+    },
+    {
+      "trial_id": 3,
+      "parameters": {
+        "epdm_content": 10.7,
+        "talc_content": 10.6,
+        "processing_temp": 130.7,
+        "screw_speed_rpm": 149.91
+      },
+      "result": {"impact_strength": 25.4}
+    },
+    {
+      "trial_id": 4,
+      "parameters": {
+        "epdm_content": 22.5,
+        "talc_content": 5.8,
+        "processing_temp": 105.2,
+        "screw_speed_rpm": 310.45
+      },
+      "result": {"impact_strength": 38.1}
+    },
+    {
+      "trial_id": 5,
+      "parameters": {
+        "epdm_content": 12.3,
+        "talc_content": 14.2,
+        "processing_temp": 135.8,
+        "screw_speed_rpm": 175.32
+      },
+      "result": {"impact_strength": 22.7}
+    },
+    {
+      "trial_id": 6,
+      "parameters": {
+        "epdm_content": 18.1,
+        "talc_content": 8.5,
+        "processing_temp": 118.9,
+        "screw_speed_rpm": 245.67
+      },
+      "result": {"impact_strength": 32.8}
+    },
+    {
+      "trial_id": 7,
+      "parameters": {
+        "epdm_content": 25.0,
+        "talc_content": 4.2,
+        "processing_temp": 98.5,
+        "screw_speed_rpm": 350.00
+      },
+      "result": {"impact_strength": 41.3}
+    },
+    {
+      "trial_id": 8,
+      "parameters": {
+        "epdm_content": 8.5,
+        "talc_content": 16.0,
+        "processing_temp": 142.0,
+        "screw_speed_rpm": 120.00
+      },
+      "result": {"impact_strength": 19.5}
+    },
+    {
+      "trial_id": 9,
+      "parameters": {
+        "epdm_content": 20.8,
+        "talc_content": 6.5,
+        "processing_temp": 108.3,
+        "screw_speed_rpm": 295.80
+      },
+      "result": {"impact_strength": 36.5}
+    },
+    {
+      "trial_id": 10,
+      "parameters": {
+        "epdm_content": 14.0,
+        "talc_content": 12.8,
+        "processing_temp": 125.0,
+        "screw_speed_rpm": 188.90
+      },
+      "result": {"impact_strength": 27.2}
+    }
+  ]
+}
