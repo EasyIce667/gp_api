@@ -103,4 +103,22 @@ def predict_model_endpoint(input_data: PredictFeatures):
     
     return response
 
-              
+#extra
+#view trial id details
+@app.get("/api/data/view/{trial_id}")
+def view_trial_id_content(trial_id: int):
+    data = load_training_data()
+    trial_data = data.get("trials",[])
+
+    for trial in trial_data:
+        if trial.get("trial_id") == trial_id:
+            return{
+                "trial_id":trial_id,
+                "trial_data":trial
+            }
+    raise HTTPException(
+        status_code=404,
+        detail=f"trial with id {trial_id} not found."
+    )
+
+
