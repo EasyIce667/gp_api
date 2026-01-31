@@ -1,8 +1,9 @@
 from fastapi import FastAPI
 import json
 from pathlib import Path
-from ml.gp_model import train_model
-
+from ml.gp_model import train_model, predict_gp
+from models import PredictFeatures
+from fastapi import HTTPException
 
 DATA_PATH = Path("data/training_data.json")
 
@@ -54,5 +55,17 @@ def train_model_endpoint():
     }
 
 # 3. predict
+@app.post("/api/model/predict")
+def predict_model_endpoint(input_data: PredictFeatures):
+    try:
+        mean, std = predict_gp(input_data.model_dump())
+    except RuntimeError:
+        raise HTTPException(status_code = 400, detail= "model not trained yet")
+    
+    return{
+        "predict_impact_strength":mean,
+        "uncertainity":std
+    }
+
 
               

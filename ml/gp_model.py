@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 
-MODEL_PATH = Path("ml/gp_model_jlib.joblib")
+MODEL_PATH = Path("ml/gp_model.joblib")
 MODEL_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 #training model
