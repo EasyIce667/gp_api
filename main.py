@@ -23,7 +23,7 @@ def load_training_data():
         return data
 
 
-#view data
+# 1.view data
 @app.get("/api/data")
 def view_data():
     data = load_training_data()
@@ -34,7 +34,7 @@ def view_data():
         "count":len(trial_data)
     }
 
-#connecting ml_model and fastapi
+# 2.train model
 @app.post("/api/model/train")
 def train_model_endpoint():
     data = load_training_data()
@@ -53,5 +53,6 @@ def train_model_endpoint():
         "R2 Score": score
     }
 
+# 3. predict
 
               
