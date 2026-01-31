@@ -42,12 +42,15 @@ Returns all available experimental trials and total count from **data/training_d
 ### 3. Predict Impact Strength
 **POST** `/api/model/predict`
 
-Input:
-```json
-{
-  "epdm_content": 17.5,
-  "talc_content": 9.0,
-  "processing_temp": 120.0,
-  "screw_speed_rpm": 250.0
-}
+    Input:
+    ```json
+    {
+    "epdm_content": 17.5,
+    "talc_content": 9.0,
+    "processing_temp": 120.0,
+    "screw_speed_rpm": 250.0
+    }
 - Result is shown in **results** folder.
+
+---
+### 4.
