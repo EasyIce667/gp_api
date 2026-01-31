@@ -39,7 +39,7 @@ def get_training_ranges(trials):
 
     return{
         key:(min(values),max(values))
-        for key, values in range.items()
+        for key, values in ranges.items()
     }
 
 
