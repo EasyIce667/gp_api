@@ -50,3 +50,4 @@ Input:
   "processing_temp": 120.0,
   "screw_speed_rpm": 250.0
 }
+- Result is shown in **results** folder.
