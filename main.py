@@ -1,17 +1,19 @@
 from fastapi import FastAPI
 import json
+from pathlib import Path
 
-DATA_PATH = "data/traning_data.json"
 
+DATA_PATH = Path("data/training_data.json")
 
+#just to check if fastapi is working 
 app = FastAPI()
 @app.get("/")
 def health():
     return{
         "status": "ok"
     }
-
-def load_traning_data():
+#loading json data
+def load_training_data():
     if not DATA_PATH.exists():
         return {"trials":[]}
     
@@ -23,12 +25,14 @@ def load_traning_data():
 #view data
 @app.get("/api/data")
 def view_data():
-    data = load_traning_data()
-    return_all_data = data.get("trials",[])
+    data = load_training_data()
+    trial_data = data.get("trials",[])
 
     return{
-        "Trials": return_all_data
+        "Trials": trial_data,
+        "count":len(trial_data)
     }
+
 
 
               
