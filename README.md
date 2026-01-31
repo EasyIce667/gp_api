@@ -53,4 +53,73 @@ Returns all available experimental trials and total count from **data/training_d
 - Result is shown in **results** folder.
 
 ---
-### 4.
+
+## How to Run the Project
+
+### Clone the Repository
+```bash
+git clone https://github.com/EasyIce667/gp_api.git
+cd gp_api
+```
+
+---
+
+### Create & Activate Virtual Environment (i used UV)
+
+```bash
+uv venv
+source .venv/bin/activate
+```
+
+---
+
+### Install Dependencies
+
+Using **pip**:
+```bash
+pip install -r requirements.txt
+```
+
+Or using **uv**:
+```bash
+uv pip install -r requirements.txt
+```
+
+---
+
+### Run the FastAPI Server
+
+```bash
+uv run uvicorn main:app --reload
+```
+
+Server will start at:
+```
+http://127.0.0.1:8000
+```
+
+---
+
+### Open API Documentation
+
+Visit:
+```
+http://127.0.0.1:8000/docs
+```
+
+You will see all **three API endpoints**:
+- View data
+- Train model
+- Make prediction
+
+---
+
+## Running Tests ( incomplete ) 
+
+```bash
+pytest
+```
+
+---
+
+
