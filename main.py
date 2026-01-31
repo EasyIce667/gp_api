@@ -40,5 +40,18 @@ def train_gp_model():
     data = load_training_data()
     trial_data = data.get("trials",[])
 
+    if not trial_data:
+        return{
+            "status":"failed",
+            "message": "no training data available"
+        }
+    score = train_model(trial_data)
+    
+    return{
+        "message":"model trained sucess",
+        "total training sample": len(trial_data),
+        "R2 Score": score
+    }
+
 
               
