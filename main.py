@@ -5,7 +5,7 @@ from ml.gp_model import train_model, predict_gp
 from models import PredictFeatures
 from fastapi import HTTPException
 
-DATA_PATH = Path("data/training_data.json")
+
 
 #just to check if fastapi is working 
 app = FastAPI()
@@ -14,6 +14,8 @@ def health():
     return{
         "status": "ok"
     }
+
+DATA_PATH = Path("data/training_data.json")
 #loading json data
 def load_training_data():
     if not DATA_PATH.exists():
@@ -22,6 +24,23 @@ def load_training_data():
     with open(DATA_PATH, "r") as f:
         data = json.load(f)
         return data
+
+def get_training_ranges(trials):
+    ranges= {
+        "epdm_content":[],
+        "talc_content":[],
+        "processing_temp":[],
+        "screw_speed_rpm":[]
+    }
+    for trial in trials:
+        params = trial["parameters"]
+        for key in ranges:
+            ranges[key].append(params[key])
+
+    return{
+        key:(min(values),max(values))
+        for key, values in range.items()
+    }
 
 
 # 1.view data
@@ -57,15 +76,31 @@ def train_model_endpoint():
 # 3. predict
 @app.post("/api/model/predict")
 def predict_model_endpoint(input_data: PredictFeatures):
+    input_dict = input_data.model_dump()
     try:
-        mean, std = predict_gp(input_data.model_dump())
+        mean, std = predict_gp(input_dict)
     except RuntimeError:
         raise HTTPException(status_code = 400, detail= "model not trained yet")
     
-    return{
+    # range warnings
+    data = load_training_data()
+    trial_data = data.get("trials",[])
+    ranges = get_training_ranges(trial_data)
+
+    warnings = []
+
+    for key, value in input_dict.items():
+        min_val, max_val = ranges[key]
+        if value < min_val or value > max_val:
+            warnings.append(f"{key}={value} is outside training range ({min_val} - {max_val})")
+    
+    response = {
         "predict_impact_strength":mean,
         "uncertainity":std
     }
-
+    if warnings:
+        response["warnings"] = warnings
+    
+    return response
 
               
