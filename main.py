@@ -18,3 +18,17 @@ def load_traning_data():
     with open(DATA_PATH, "r") as f:
         data = json.load(f)
         return data
+
+
+#view data
+@app.get("/api/data")
+def view_data():
+    data = load_traning_data()
+    return_all_data = data.get("trials",[])
+
+    return{
+        "Trials": return_all_data
+    }
+
+
+              
