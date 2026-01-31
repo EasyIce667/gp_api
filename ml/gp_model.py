@@ -5,11 +5,13 @@ from sklearn.gaussian_process.kernels import RBF, ConstantKernel
 from pathlib import Path
 
 
-X,Y = [],[]
+
 MODEL_PATH = Path("ml/gp_model_jlib.joblib")
+MODEL_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 #training model
 def train_model(trials):
+    X,Y = [],[]
 
     for trial in trials:
         params= trial["parameters"]

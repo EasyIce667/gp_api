@@ -36,7 +36,7 @@ def view_data():
 
 #connecting ml_model and fastapi
 @app.post("/api/model/train")
-def train_gp_model():
+def train_model_endpoint():
     data = load_training_data()
     trial_data = data.get("trials",[])
 
