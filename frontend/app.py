@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import requests 
+import matplotlib.pyplot as plt
+import numpy as np
 
 API_BASE_URL = "http://127.0.0.1:8000"
 
@@ -112,3 +114,4 @@ elif page == "Predict Impact Strength":
             st.error(
                 response.json().get("detail", "Prediction failed")
             )
+
