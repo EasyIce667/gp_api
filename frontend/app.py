@@ -51,7 +51,7 @@ elif page == "Train Model (Gaussian Process)":
         if response.status_code == 200:
             result = response.json()
             st.success("Model trained sucessfully")
-            st.metric("R2 Score", round(result.get("r2_score",0), 4))
+            st.metric("R2 Score", round(result.get("R2 Score",0), 4))
         else:
             st.error("Training Failed")
 
@@ -62,41 +62,54 @@ elif page == "Predict Impact Strength":
     col1, col2 = st.columns(2)
 
     with col1:
-        epdm = st.number_input("EPDM Content", value=17.5)
-        talc = st.number_input("Talc Content", value=9.0)
+        epdm = st.number_input(
+            "EPDM Content (%)",min_value=0.0,value=17.5,step=0.1)
+        
+        talc = st.number_input(
+            "Talc Content (%)",min_value=0.0,value=9.0,step=0.1)
 
     with col2:
-        temp = st.number_input("Processing Temperature", value=120.0)
-        rpm = st.number_input("Screw Speed (RPM)", value=250.0)
+        temp = st.number_input(
+            "Processing Temperature (°C)",min_value=0.0,value=120.0,step=1.0
+        )
+        
+        rpm = st.number_input(
+            "Screw Speed (RPM)",min_value=0.0,value=250.0,step=5.0
+        )
+
+    payload = {
+        "epdm_content": epdm,
+        "talc_content": talc,
+        "processing_temp": temp,
+        "screw_speed_rpm": rpm
+    }
+
+    with st.expander("🔍 Input Summary"):
+        st.json(payload)
 
     if st.button("Predict"):
-        payload = {
-            "epdm_content": epdm,
-            "talc_content": talc,
-            "processing_temp": temp,
-            "screw_speed_rpm": rpm
-        }
-
-        response = requests.post(
-            f"{API_BASE_URL}/api/model/predict",
-            json=payload
-        )
+        with st.spinner("Predicting..."):
+            response = requests.post(
+                f"{API_BASE_URL}/api/model/predict",
+                json=payload
+            )
 
         if response.status_code == 200:
             result = response.json()
 
-            st.success("Prediction successful")
+            st.success("Prediction successful 🎯")
 
             col1, col2 = st.columns(2)
+            
             col1.metric(
                 "Impact Strength",
-                f"{result['prediction']:.2f}"
+                f"{result['predict_impact_strength']:.2f}"
             )
             col2.metric(
                 "Uncertainty (σ)",
-                f"{result['uncertainty']:.2f}"
+                f"{result['uncertainity']:.2f}"
             )
         else:
-            st.error(response.json().get("detail", "Prediction failed"))
-
-
+            st.error(
+                response.json().get("detail", "Prediction failed")
+            )
