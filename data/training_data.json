@@ -99,6 +99,406 @@
         "screw_speed_rpm": 188.90
       },
       "result": {"impact_strength": 27.2}
+    },
+    {
+      "trial_id": 11,
+      "parameters": {
+        "epdm_content": 16.8,
+        "talc_content": 9.4,
+        "processing_temp": 120.5,
+        "screw_speed_rpm": 230.15
+      },
+      "result": { "impact_strength": 31.6 }
+    },
+    {
+      "trial_id": 12,
+      "parameters": {
+        "epdm_content": 21.2,
+        "talc_content": 6.1,
+        "processing_temp": 109.8,
+        "screw_speed_rpm": 305.40
+      },
+      "result": { "impact_strength": 37.2 }
+    },
+    {
+      "trial_id": 13,
+      "parameters": {
+        "epdm_content": 11.5,
+        "talc_content": 13.8,
+        "processing_temp": 133.6,
+        "screw_speed_rpm": 165.70
+      },
+      "result": { "impact_strength": 23.9 }
+    },
+    {
+      "trial_id": 14,
+      "parameters": {
+        "epdm_content": 23.6,
+        "talc_content": 5.0,
+        "processing_temp": 102.4,
+        "screw_speed_rpm": 332.80
+      },
+      "result": { "impact_strength": 39.8 }
+    },
+    {
+      "trial_id": 15,
+      "parameters": {
+        "epdm_content": 13.2,
+        "talc_content": 14.9,
+        "processing_temp": 138.1,
+        "screw_speed_rpm": 155.20
+      },
+      "result": { "impact_strength": 21.8 }
+    },
+    {
+      "trial_id": 16,
+      "parameters": {
+        "epdm_content": 19.3,
+        "talc_content": 7.7,
+        "processing_temp": 116.2,
+        "screw_speed_rpm": 260.45
+      },
+      "result": { "impact_strength": 33.9 }
+    },
+    {
+      "trial_id": 17,
+      "parameters": {
+        "epdm_content": 24.8,
+        "talc_content": 4.5,
+        "processing_temp": 99.6,
+        "screw_speed_rpm": 345.10
+      },
+      "result": { "impact_strength": 40.7 }
+    },
+    {
+      "trial_id": 18,
+      "parameters": {
+        "epdm_content": 9.6,
+        "talc_content": 15.5,
+        "processing_temp": 140.4,
+        "screw_speed_rpm": 135.60
+      },
+      "result": { "impact_strength": 20.4 }
+    },
+    {
+      "trial_id": 19,
+      "parameters": {
+        "epdm_content": 18.9,
+        "talc_content": 8.2,
+        "processing_temp": 114.7,
+        "screw_speed_rpm": 270.30
+      },
+      "result": { "impact_strength": 34.5 }
+    },
+    {
+      "trial_id": 20,
+      "parameters": {
+        "epdm_content": 14.7,
+        "talc_content": 12.1,
+        "processing_temp": 128.9,
+        "screw_speed_rpm": 195.40
+      },
+      "result": { "impact_strength": 28.6 }
+    },
+    {
+      "trial_id": 21,
+      "parameters": {
+        "epdm_content": 22.1,
+        "talc_content": 6.8,
+        "processing_temp": 107.5,
+        "screw_speed_rpm": 290.75
+      },
+      "result": { "impact_strength": 36.9 }
+    },
+    {
+      "trial_id": 22,
+      "parameters": {
+        "epdm_content": 10.2,
+        "talc_content": 14.1,
+        "processing_temp": 136.0,
+        "screw_speed_rpm": 160.90
+      },
+      "result": { "impact_strength": 22.1 }
+    },
+    {
+      "trial_id": 23,
+      "parameters": {
+        "epdm_content": 26.0,
+        "talc_content": 3.9,
+        "processing_temp": 96.8,
+        "screw_speed_rpm": 360.00
+      },
+      "result": { "impact_strength": 42.5 }
+    },
+    {
+      "trial_id": 24,
+      "parameters": {
+        "epdm_content": 17.4,
+        "talc_content": 9.0,
+        "processing_temp": 119.3,
+        "screw_speed_rpm": 240.80
+      },
+      "result": { "impact_strength": 32.4 }
+    },
+    {
+      "trial_id": 25,
+      "parameters": {
+        "epdm_content": 12.0,
+        "talc_content": 13.5,
+        "processing_temp": 132.1,
+        "screw_speed_rpm": 170.25
+      },
+      "result": { "impact_strength": 24.6 }
+    },
+    {
+      "trial_id": 26,
+      "parameters": {
+        "epdm_content": 15.6,
+        "talc_content": 10.4,
+        "processing_temp": 122.8,
+        "screw_speed_rpm": 215.30
+      },
+      "result": { "impact_strength": 29.8 }
+    },
+    {
+      "trial_id": 27,
+      "parameters": {
+        "epdm_content": 20.1,
+        "talc_content": 7.0,
+        "processing_temp": 112.6,
+        "screw_speed_rpm": 275.90
+      },
+      "result": { "impact_strength": 35.4 }
+    },
+    {
+      "trial_id": 28,
+      "parameters": {
+        "epdm_content": 11.0,
+        "talc_content": 14.6,
+        "processing_temp": 137.4,
+        "screw_speed_rpm": 158.10
+      },
+      "result": { "impact_strength": 22.4 }
+    },
+    {
+      "trial_id": 29,
+      "parameters": {
+        "epdm_content": 24.3,
+        "talc_content": 4.8,
+        "processing_temp": 101.2,
+        "screw_speed_rpm": 335.60
+      },
+      "result": { "impact_strength": 40.1 }
+    },
+    {
+      "trial_id": 30,
+      "parameters": {
+        "epdm_content": 13.5,
+        "talc_content": 13.2,
+        "processing_temp": 130.8,
+        "screw_speed_rpm": 180.50
+      },
+      "result": { "impact_strength": 25.9 }
+    },
+    {
+      "trial_id": 31,
+      "parameters": {
+        "epdm_content": 18.4,
+        "talc_content": 8.8,
+        "processing_temp": 117.9,
+        "screw_speed_rpm": 255.40
+      },
+      "result": { "impact_strength": 33.2 }
+    },
+    {
+      "trial_id": 32,
+      "parameters": {
+        "epdm_content": 25.5,
+        "talc_content": 4.1,
+        "processing_temp": 97.3,
+        "screw_speed_rpm": 355.20
+      },
+      "result": { "impact_strength": 42.0 }
+    },
+    {
+      "trial_id": 33,
+      "parameters": {
+        "epdm_content": 9.2,
+        "talc_content": 15.8,
+        "processing_temp": 141.5,
+        "screw_speed_rpm": 128.40
+      },
+      "result": { "impact_strength": 19.9 }
+    },
+    {
+      "trial_id": 34,
+      "parameters": {
+        "epdm_content": 19.8,
+        "talc_content": 7.9,
+        "processing_temp": 113.4,
+        "screw_speed_rpm": 268.75
+      },
+      "result": { "impact_strength": 34.8 }
+    },
+    {
+      "trial_id": 35,
+      "parameters": {
+        "epdm_content": 14.9,
+        "talc_content": 11.9,
+        "processing_temp": 126.6,
+        "screw_speed_rpm": 198.20
+      },
+      "result": { "impact_strength": 28.1 }
+    },
+    {
+      "trial_id": 36,
+      "parameters": {
+        "epdm_content": 22.7,
+        "talc_content": 6.3,
+        "processing_temp": 106.9,
+        "screw_speed_rpm": 300.10
+      },
+      "result": { "impact_strength": 37.6 }
+    },
+    {
+      "trial_id": 37,
+      "parameters": {
+        "epdm_content": 10.9,
+        "talc_content": 14.9,
+        "processing_temp": 139.2,
+        "screw_speed_rpm": 150.70
+      },
+      "result": { "impact_strength": 21.5 }
+    },
+    {
+      "trial_id": 38,
+      "parameters": {
+        "epdm_content": 26.8,
+        "talc_content": 3.6,
+        "processing_temp": 95.5,
+        "screw_speed_rpm": 370.00
+      },
+      "result": { "impact_strength": 43.1 }
+    },
+    {
+      "trial_id": 39,
+      "parameters": {
+        "epdm_content": 17.9,
+        "talc_content": 9.6,
+        "processing_temp": 121.4,
+        "screw_speed_rpm": 235.80
+      },
+      "result": { "impact_strength": 31.9 }
+    },
+    {
+      "trial_id": 40,
+      "parameters": {
+        "epdm_content": 12.7,
+        "talc_content": 13.9,
+        "processing_temp": 134.5,
+        "screw_speed_rpm": 168.60
+      },
+      "result": { "impact_strength": 24.1 }
+    },
+    {
+      "trial_id": 41,
+      "parameters": {
+        "epdm_content": 21.5,
+        "talc_content": 6.6,
+        "processing_temp": 110.3,
+        "screw_speed_rpm": 285.90
+      },
+      "result": { "impact_strength": 36.2 }
+    },
+    {
+      "trial_id": 42,
+      "parameters": {
+        "epdm_content": 8.9,
+        "talc_content": 16.4,
+        "processing_temp": 143.0,
+        "screw_speed_rpm": 118.50
+      },
+      "result": { "impact_strength": 18.7 }
+    },
+    {
+      "trial_id": 43,
+      "parameters": {
+        "epdm_content": 23.9,
+        "talc_content": 5.4,
+        "processing_temp": 103.6,
+        "screw_speed_rpm": 320.40
+      },
+      "result": { "impact_strength": 39.2 }
+    },
+    {
+      "trial_id": 44,
+      "parameters": {
+        "epdm_content": 16.3,
+        "talc_content": 10.8,
+        "processing_temp": 124.1,
+        "screw_speed_rpm": 210.90
+      },
+      "result": { "impact_strength": 29.1 }
+    },
+    {
+      "trial_id": 45,
+      "parameters": {
+        "epdm_content": 27.5,
+        "talc_content": 3.4,
+        "processing_temp": 94.0,
+        "screw_speed_rpm": 380.00
+      },
+      "result": { "impact_strength": 44.0 }
+    },
+    {
+      "trial_id": 46,
+      "parameters": {
+        "epdm_content": 11.8,
+        "talc_content": 14.3,
+        "processing_temp": 135.9,
+        "screw_speed_rpm": 162.30
+      },
+      "result": { "impact_strength": 23.0 }
+    },
+    {
+      "trial_id": 47,
+      "parameters": {
+        "epdm_content": 18.7,
+        "talc_content": 8.4,
+        "processing_temp": 116.7,
+        "screw_speed_rpm": 262.10
+      },
+      "result": { "impact_strength": 33.7 }
+    },
+    {
+      "trial_id": 48,
+      "parameters": {
+        "epdm_content": 20.9,
+        "talc_content": 7.3,
+        "processing_temp": 111.9,
+        "screw_speed_rpm": 278.60
+      },
+      "result": { "impact_strength": 35.9 }
+    },
+    {
+      "trial_id": 49,
+      "parameters": {
+        "epdm_content": 14.2,
+        "talc_content": 12.6,
+        "processing_temp": 127.8,
+        "screw_speed_rpm": 190.70
+      },
+      "result": { "impact_strength": 27.4 }
+    },
+    {
+      "trial_id": 50,
+      "parameters": {
+        "epdm_content": 22.9,
+        "talc_content": 5.9,
+        "processing_temp": 104.8,
+        "screw_speed_rpm": 310.00
+      },
+      "result": { "impact_strength": 38.5 }
     }
   ]
 }
