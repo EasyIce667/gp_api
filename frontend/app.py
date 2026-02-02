@@ -57,7 +57,7 @@ elif page == "Train Model (Gaussian Process)":
 
 # prediction page
 elif page == "Predict Impact Strength":
-    st.header("🔮 Predict Impact Strength")
+    st.header(" Predict Impact Strength")
 
     col1, col2 = st.columns(2)
 
@@ -84,7 +84,7 @@ elif page == "Predict Impact Strength":
         "screw_speed_rpm": rpm
     }
 
-    with st.expander("🔍 Input Summary"):
+    with st.expander(" Input Summary"):
         st.json(payload)
 
     if st.button("Predict"):
@@ -97,7 +97,7 @@ elif page == "Predict Impact Strength":
         if response.status_code == 200:
             result = response.json()
 
-            st.success("Prediction successful 🎯")
+            st.success("Prediction successful ")
 
             col1, col2 = st.columns(2)
             
